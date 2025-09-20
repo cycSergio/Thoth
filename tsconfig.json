@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // 编译后的 JS 目标版本
+    "lib": ["ES2020", "DOM"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["chrome"]         // 额外包含的类型声明：让 TS 识别 chrome.* API
+  },
+  "include": ["src/**/*", "extension/sw.js"]    // 你的源码目录
+}
